@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대한투어</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 헤더푸터 브라우저전체, 텍스트로고200*40, 갤러리 이미지3, 이미지 바로가기 -->
+  <!-- 하단 전체채움 메뉴, 모달 팝업(첫번째 공지), 상하 슬라이드 -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div>
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="대한투어 로고" />
+            </a>
+          </div>
+          <div id="nav">
+            <ul id="menu">
+              <li>
+                <a href="#">해외여행</a>
+                <ul class="submenu">
+                  <li><a href="#">동남아/대만</a></li>
+                  <li><a href="#">중국/홍콩</a></li>
+                  <li><a href="#">유럽/두바이</a></li>
+                  <li><a href="#">미주/하와이</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">국내여행</a>
+                <ul class="submenu">
+                  <li><a href="#">서울/경기권</a></li>
+                  <li><a href="#">충청권</a></li>
+                  <li><a href="#">전라권</a></li>
+                  <li><a href="#">경상/강원권</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">제주도</a>
+                <ul class="submenu">
+                  <li><a href="#">버스여행</a></li>
+                  <li><a href="#">자유여행</a></li>
+                  <li><a href="#">호텔/펜션</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">렌터카</a>
+                <ul class="submenu">
+                  <li><a href="#">국내 렌터카</a></li>
+                  <li><a href="#">국외 렌터카</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-bg"></div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <div id="slider">
+        <ul id="slider-wrap">
+          <li class="slider">
+            <img
+              src="images/slide1.jpg"
+              alt="대한투어의 비전 여행의 새로운 경험을 제공하다"
+            />
+          </li>
+          <li class="slider">
+            <img
+              src="images/slide2.jpg"
+              alt="특별한 여행 패키지 소개 당신의 꿈을 현실로"
+            />
+          </li>
+          <li class="slider">
+            <img
+              src="images/slide3.jpg"
+              alt="고객 후기 및 성공 사례 함께한 여행 이야기"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- slider -->
+
+      <article id="contents">
+        <section id="notice">
+          <div class="c-title"><a href="#">공지사항</a></div>
+          <ul class="c-body">
+            <li>
+              <a href="#">
+                <span>2024년 여름 여행 패키지 출시 안내</span>
+                <span>2024년 1월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>특별 할인 이벤트 진행 안내</span>
+                <span>2024년 3월 10일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>고객 만족도 조사 실시 안내</span>
+                <span>2024년 4월 5일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>여행 안전 수칙 안내</span>
+                <span>2024년 4월 20일</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- notice end -->
+
+        <section id="gallery">
+          <div class="c-title"><a href="#">갤러리</a></div>
+          <ul class="c-body">
+            <li>
+              <a href="#">
+                <img src="images/gal1.jpg" alt="갤러리 이미지1" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gal2.jpg" alt="갤러리 이미지2" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gal3.jpg" alt="갤러리 이미지3" />
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- gallery end -->
+
+        <section id="shortcut">
+          <a href="#">
+            <img src="images/shortcut.jpg" alt="바로가기 이미지" />
+            <span>바로가기</span>
+          </a>
+        </section>
+        <!-- shortcut end -->
+      </article>
+      <!-- contents end -->
+
+      <footer id="footer">
+        <div>
+          <div id="copyright">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+          </div>
+          <div id="sns-fam">
+            <ul id="sns">
+              <li>
+                <a href="#">
+                  <img src="images/sns1.jpg" alt="페이스북" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/sns2.jpg" alt="트위터" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/sns3.jpg" alt="인스타그램" />
+                </a>
+              </li>
+            </ul>
+            <div id="fam-site">
+              <select name="sites" id="sites">
+                <option value="opt1">대한투어 블로그</option>
+                <option value="opt2">대한투어 고객 서비스 센터</option>
+                <option value="opt3">대한투어 이벤트 페이지</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="modal-bg"></div>
+      <div id="popup">
+        <div class="p-title">대한투어에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요!<br />
+          대한투어를 찾아주셔서 감사합니다.<br />
+          저희는 고객님께 특별한 여행 경험을 제공하기 위해 최선을 다하고
+          있습니다.<br />
+          최신 여행 패키지와 이벤트 정보는 아래 링크에서 확인하세요!<br />
+          여러분의 소중한 의견을 기다립니다!<br />
+          감사합니다!
+        </div>
+        <div id="close-btn"><a href="#">×닫기</a></div>
+      </div>
+      <!-- popup end -->
+    </div>
+    <!-- wrap end -->
+  </body>
+</html>

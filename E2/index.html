@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>역사박물관</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 헤더푸터브라우저전체, 갤러리2개 -->
+  <!-- 하단개별메뉴, 상하슬라이더, 모달팝업(첫번째 공지) -->
+  <body>
+    <div id="wrap">
+      <div id="main">
+        <header id="header">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="역사박물관 로고" />
+            </a>
+          </div>
+          <div id="nav">
+            <ul id="menu">
+              <li>
+                <a href="#">박물관 소개</a>
+                <ul class="submenu">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">박물관연혁</a></li>
+                  <li><a href="#">유물현황</a></li>
+                  <li><a href="#">관람안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">전시</a>
+                <ul class="submenu">
+                  <li><a href="#">선사시대</a></li>
+                  <li><a href="#">삼국시대</a></li>
+                  <li><a href="#">조선시대</a></li>
+                  <li><a href="#">근대시대</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">연구</a>
+                <ul class="submenu">
+                  <li><a href="#">생활유적</a></li>
+                  <li><a href="#">분묘유적</a></li>
+                  <li><a href="#">생산유적</a></li>
+                  <li><a href="#">통신유적</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">교육</a>
+                <ul class="submenu">
+                  <li><a href="#">문화행사</a></li>
+                  <li><a href="#">진로체험</a></li>
+                  <li><a href="#">외부교육</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!-- header end -->
+
+        <article id="contents">
+          <section id="notice">
+            <div class="c-title"><a href="#">공지사항</a></div>
+            <ul class="c-body">
+              <li>
+                <a href="#">
+                  <span>2024년 특별 전시회 개막 안내</span>
+                  <span>2024년 6월 1일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>가족 단위 체험 프로그램 신청 안내</span>
+                  <span>2024년 6월 5일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>박물관 방문 시 안전 수칙 안내</span>
+                  <span>2024년 6월 10일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>역사 강좌 일정 및 신청 방법</span>
+                  <span>2024년 6월 15일</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="gallery">
+            <div class="c-title"><a href="#">갤러리</a></div>
+            <ul class="c-body">
+              <li>
+                <a href="#">
+                  <div class="g-image">
+                    <img src="images/gal1.jpg" alt="갤러리 내용" />
+                  </div>
+                  <p>갤러리 내용</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="g-image">
+                    <img src="images/gal2.jpg" alt="갤러리 내용" />
+                  </div>
+                  <p>갤러리 내용</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="shortcut">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="s-image">
+                    <img src="images/icon1.png" alt="회사소개" />
+                  </div>
+                  <p>회사소개</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="s-image">
+                    <img src="images/icon2.png" alt="지도" />
+                  </div>
+                  <p>지도</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="s-image">
+                    <img src="images/icon3.png" alt="공지사항" />
+                  </div>
+                  <p>공지사항</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="s-image">
+                    <img src="images/icon4.png" alt="전화문의" />
+                  </div>
+                  <p>전화문의</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- contents end -->
+
+        <div id="slider">
+          <ul id="slider-wrap">
+            <li class="slider">
+              <img
+                src="images/slide1.jpg"
+                alt="역사의 현장: 시대별 주요 전시물 소개"
+              />
+            </li>
+            <li class="slider">
+              <img
+                src="images/slide2.jpg"
+                alt="체험 프로그램 안내: 역사와 함께하는 교육"
+              />
+            </li>
+            <li class="slider">
+              <img
+                src="images/slide3.jpg"
+                alt="특별 전시회: 고대 문명과의 만남"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- slider end -->
+      </div>
+      <!-- main end -->
+      <footer id="footer">
+        <div class="logo">
+          <a href="#">
+            <img src="images/bw-logo.jpg" alt="역사박물관 흑백 로고" />
+          </a>
+        </div>
+        <div id="copyright">
+          COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+        </div>
+        <div id="fam-site">
+          <select name="sites" id="sites">
+            <option value="op1">국립박물관</option>
+            <option value="op1">역사문화재단</option>
+            <option value="op1">지역문화재센터</option>
+          </select>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="modal-bg"></div>
+      <div id="popup">
+        <div class="p-title">역사박물관에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요! 역사박물관을 방문해 주셔서 감사합니다.<br />
+          우리 박물관은 다양한 시대의 역사와 문화유산을 체험할 수 있는 특별한
+          공간입니다.<br />
+          신규 특별 전시회와 다양한 프로그램이 준비되어 있으니, 놓치지 마세요!
+        </div>
+        <div id="close-btn">
+          <a href="#">×닫기</a>
+        </div>
+      </div>
+      <!-- popup end -->
+    </div>
+    <!-- wrap end -->
+  </body>
+</html>
