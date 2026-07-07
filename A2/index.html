@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green복지재단</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 200*40글자로고, 1200가운데정렬, 이미지배너 -->
+  <!-- 하단전체메뉴, 좌우슬라이드, 모달팝업(첫 공지) -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="logo">
+          <a href="#"><img src="images/logo.jpg" alt="그린복지재단 로고" /></a>
+        </div>
+        <div id="nav">
+          <ul id="menu">
+            <li>
+              <a href="#">재단소개</a>
+              <ul class="submenu">
+                <li><a href="#">설립취지</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">후원하기</a>
+              <ul class="submenu">
+                <li><a href="#">국내후원</a></li>
+                <li><a href="#">국외후원</a></li>
+                <li><a href="#">맞춤후원</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">자료실</a>
+              <ul class="submenu">
+                <li><a href="#">서식자료실</a></li>
+                <li><a href="#">사진자료실</a></li>
+                <li><a href="#">후원양식</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스토리</a>
+              <ul class="submenu">
+                <li><a href="#">웹진</a></li>
+                <li><a href="#">보고서</a></li>
+                <li><a href="#">나의후원</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="menu-bg"></div>
+      <!-- header end -->
+
+      <div id="slide">
+        <ul id="slide-wrap">
+          <li class="slide">
+            <img src="images/slide.jpg" alt="지속 가능한 미래를 위한 약속" />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide2.jpg"
+              alt="지역 사회와 함께하는 다양한 지원 활동"
+            />
+          </li>
+          <li class="slide">
+            <img src="images/slide3.jpg" alt="변화의 여정을 함께한 이야기" />
+          </li>
+        </ul>
+      </div>
+      <!-- slide end -->
+
+      <article id="contents">
+        <section id="notice">
+          <div class="c-title"><a href="#">공지사항</a></div>
+          <ul class="c-body">
+            <li>
+              <a href="#">
+                <span>2024년도 후원금 접수 안내</span>
+                <span>2024년 1월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>자원봉사자 모집 안내</span>
+                <span>2024년 1월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>3월 정기 워크숍 일정 공지</span>
+                <span>2024년 1월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>연말 기부 캠페인 결과 발표</span>
+                <span>2024년 1월 15일</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="gallery">
+          <div class="c-title"><a href="#">갤러리</a></div>
+          <ul class="c-body">
+            <li>
+              <a href="#">
+                <img src="images/gal1.jpg" alt="갤러리 이미지1" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gal2.jpg" alt="갤러리 이미지2" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gal3.jpg" alt="갤러리 이미지3" />
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="banner">
+          <img src="images/banner.jpg" alt="배너 이미지" />
+          <span><a href="#">배너</a></span>
+        </section>
+      </article>
+      <!-- contents end -->
+
+      <footer id="footer">
+        <div class="logo">
+          <a href="#"
+            ><img src="images/bw-logo.jpg" alt="그린복지재단 흑백로고"
+          /></a>
+        </div>
+        <p>COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.</p>
+        <div id="fam-site">
+          <select name="sites" id="sites">
+            <option value="opt1">Green 자원봉사</option>
+            <option value="opt2">Green 교육</option>
+            <option value="opt3">Green 후원</option>
+          </select>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="modal-bg"></div>
+      <div id="popup">
+        <p class="p-title">우리와 함께하는 변화를 만들어보세요!</p>
+        <p class="p-body">
+          안녕하세요!<br />
+          Green 복지재단에 관심을 가져주셔서 감사합니다.<br />
+          우리 재단은 지역 사회를 위한 다양한 지원 프로그램과 활동을 운영하고
+          있습니다.<br />
+          여러분의 참여가 큰 힘이 됩니다.<br />
+          지금 자원봉사자나 후원자로 가입하셔서 함께 더 나은 세상을 만들어가는
+          여정에 동참해 주세요!
+        </p>
+        <div id="close-btn">
+          <a href="#">×닫기</a>
+        </div>
+      </div>
+      <!-- popup end -->
+    </div>
+    <!-- wrap end -->
+  </body>
+</html>
