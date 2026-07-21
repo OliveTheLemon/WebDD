@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>산업대학교</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 하단전체메뉴, 좌우슬라이드, 모달팝업(첫공지) -->
+  <!-- 1200가운데정렬, 로고비율유지 -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.jpg" alt="산업대학교 로고 이미지" />
+          </a>
+        </div>
+        <div id="nav">
+          <ul id="menu">
+            <li>
+              <a href="#">대학소개</a>
+              <ul class="submenu">
+                <li><a href="#">총장인사말</a></li>
+                <li><a href="#">학교소개</a></li>
+                <li><a href="#">홍보관</a></li>
+                <li><a href="#">캠퍼스안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">입학소개</a>
+              <ul class="submenu">
+                <li><a href="#">수시모집</a></li>
+                <li><a href="#">정시모집</a></li>
+                <li><a href="#">편입학</a></li>
+                <li><a href="#">재외국민</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">정보서비스</a>
+              <ul class="submenu">
+                <li><a href="#">대학정보알림</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">정보서비스안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">참여게시판</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div id="menu-bg"></div>
+      <!-- header end -->
+
+      <div id="slide">
+        <ul id="slide-wrap">
+          <li class="slide">
+            <img
+              src="images/slide1.jpg"
+              alt="산업대학교의 비전: 미래 산업을 선도하다"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide2.jpg"
+              alt="전문 인력 양성 프로그램: 실무 중심의 교육"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide3.jpg"
+              alt="산업 연계 연구 성과: 혁신적인 해결책 제공"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- slide end -->
+
+      <article id="contents">
+        <section id="notice">
+          <div class="c-title"><a href="#">공지사항</a></div>
+          <ul class="c-body">
+            <li>
+              <a href="#">
+                <span>2024학년도 신입생 모집 안내</span>
+                <span>2024년 1월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>학기 중 무료 상담 서비스 운영 안내</span>
+                <span>2024년 2월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>산업체 인턴십 프로그램 신청 안내</span>
+                <span>2024년 3월 15일</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>졸업생 취업 박람회 일정 공지</span>
+                <span>2024년 4월 15일</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="gallery">
+          <div class="c-title"><a href="#">갤러리</a></div>
+          <ul class="c-body">
+            <li>
+              <a href="#">
+                <img src="images/gal1.jpg" alt="갤러리 이미지 1" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gal2.jpg" alt="갤러리 이미지 2" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/gal3.jpg" alt="갤러리 이미지 3" />
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="banner">
+          <img src="images/banner.jpg" alt="배너 이미지" />
+          <span><a href="#">배너</a></span>
+        </section>
+      </article>
+      <!-- contents end -->
+
+      <footer id="footer">
+        <div id="menu-copy">
+          <ul id="btm-menu">
+            <li><a href="#">학교 소개</a></li>
+            <li><a href="#">학사 일정</a></li>
+            <li><a href="#">학생 지원 센터</a></li>
+          </ul>
+          <div id="copyright">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+        <div id="famsite">
+          <select name="sites" id="sites">
+            <option value="opt1">연구소</option>
+            <option value="opt2">커뮤니티</option>
+            <option value="opt3">온라인강의</option>
+          </select>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- wrap end -->
+
+    <div id="modal-bg"></div>
+    <div id="popup">
+      <div class="p-title">산업대학교에 오신 것을 환영합니다!</div>
+      <div class="p-body">
+        안녕하세요!<br />
+        산업대학교를 방문해 주셔서 감사합니다.<br />
+        저희 대학은 실무 중심의 교육과 산업 연계를 통해 미래의 전문 인력을
+        양성하는 것을 목표로 하고 있습니다.<br />
+        학생 여러분의 학습과 성장을 지원하기 위해 다양한 프로그램과 자원을
+        제공하고 있습니다.<br />
+        최신 소식과 이벤트에 대한 정보는 아래 링크를 통해 확인해 주세요!
+      </div>
+      <div id="close-btn">
+        <a href="#">×닫기</a>
+      </div>
+    </div>
+    <!-- popup end -->
+  </body>
+</html>
