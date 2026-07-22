@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대한은행</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 하단메뉴, 좌우슬라이드, 탭메뉴, 팝업(첫공지) -->
+  <!-- 1200가운데정렬(헤더,푸터브라우저전체), 
+   이미지배너, 이미지바로가기, 로고(200*40, 흑백) -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div>
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="대한은행 로고 이미지" />
+            </a>
+          </div>
+          <div id="nav">
+            <ul id="menu">
+              <li>
+                <a href="#">개인</a>
+                <ul class="submenu">
+                  <li><a href="#">조회</a></li>
+                  <li><a href="#">이체</a></li>
+                  <li><a href="#">공과금</a></li>
+                  <li><a href="#">예금/신탁</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">기업</a>
+                <ul class="submenu">
+                  <li><a href="#">조회</a></li>
+                  <li><a href="#">이체</a></li>
+                  <li><a href="#">전자결제</a></li>
+                  <li><a href="#">수표/어음</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">금융상품</a>
+                <ul class="submenu">
+                  <li><a href="#">저축상품</a></li>
+                  <li><a href="#">대출상품</a></li>
+                  <li><a href="#">투자상품</a></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">카드</a>
+                <ul class="submenu">
+                  <li><a href="#">카드정보</a></li>
+                  <li><a href="#">카드신청</a></li>
+                  <li><a href="#">이용내역조회</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <div id="slide">
+        <ul id="slide-wrap">
+          <li class="slide">
+            <img
+              src="images/slide1.jpg"
+              alt="대한은행의 비전 고객 중심의 금융 서비스"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide2.jpg"
+              alt="혁신적인 금융 상품 소개 당신의 금융 파트너"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide3.jpg"
+              alt="사회적 책임 지속 가능한 발전을 위한 노력"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- slide end -->
+
+      <article id="contents">
+        <section id="tab">
+          <ul id="t-title">
+            <li class="t-active"><a href="#">공지사항</a></li>
+            <li><a href="#">갤러리</a></li>
+          </ul>
+          <div id="t-body">
+            <ul id="notice">
+              <li>
+                <a href="#">
+                  <span>2024년 신규 금융 상품 출시 안내</span>
+                  <span>2024년 1월 10일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>온라인 뱅킹 서비스 개선 소식</span>
+                  <span>2024년 2월 10일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>고객 만족을 위한 이벤트 개최 안내</span>
+                  <span>2024년 3월 10일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>사회적 책임 활동 보고서 발행</span>
+                  <span>2024년 4월 10일</span>
+                </a>
+              </li>
+            </ul>
+            <ul id="gallery">
+              <li>
+                <a href="#">
+                  <img src="images/icon1.jpg" alt="갤러리 첫번째 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon2.jpg" alt="갤러리 두번째 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon3.jpg" alt="갤러리 세번째 이미지" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="banner">
+          <img src="images/banner.jpg" alt="배너 이미지" />
+          <span><a href="#">배너</a></span>
+        </section>
+        <section id="shortcut">
+          <img src="images/shortcut.jpg" alt="바로가기 이미지" />
+          <span><a href="#">바로가기</a></span>
+        </section>
+      </article>
+      <!-- contents end -->
+
+      <footer id="footer">
+        <div>
+          <div class="logo">
+            <a href="#">
+              <img src="images/bw-logo.jpg" alt="대한은행 흑백 로고 이미지" />
+            </a>
+          </div>
+          <div id="menu-copy">
+            <ul class="btm-menu">
+              <li><a href="#">은행 소개</a></li>
+              <li><a href="#">금융 상품 안내</a></li>
+              <li><a href="#">고객 지원 센터</a></li>
+            </ul>
+            <div id="copyright">
+              COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="popup">
+        <div class="p-title">대한은행에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요!<br />
+          대한은행을 방문해 주셔서 감사합니다.<br />
+          고객님께 최상의 금융 서비스를 제공하기 위해 노력하고 있습니다.<br />
+          새로운 금융 상품과 이벤트에 대한 정보는 아래 링크를 통해 확인해
+          주세요!
+        </div>
+        <div id="close-btn">
+          <a href="#">×닫기</a>
+        </div>
+      </div>
+      <!-- popup end -->
+    </div>
+  </body>
+</html>
