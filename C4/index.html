@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vallery Festival</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 우측개별메뉴(종합배경), 좌우슬라이드, 모달팝업(첫공지) -->
+  <!-- 1000왼쪽, 종횡비로고, 흑백로고, 이미지바로가기 -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.jpg" alt="Vallery Festival 로고 이미지" />
+          </a>
+        </div>
+        <div id="nav">
+          <ul id="menu">
+            <li>
+              <a href="#">축제소개</a>
+              <ul class="submenu">
+                <li><a href="#">Festival소개</a></li>
+                <li><a href="#">행사장 안내</a></li>
+                <li><a href="#">조직위원회</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">예약안내</a>
+              <ul class="submenu">
+                <li><a href="#">예약하기</a></li>
+                <li><a href="#">예약확인/취소</a></li>
+                <li><a href="#">단체예약문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아티스트</a>
+              <ul class="submenu">
+                <li><a href="#">고릴라즈</a></li>
+                <li><a href="#">메이저 레이저</a></li>
+                <li><a href="#">아우스게인</a></li>
+                <li><a href="#">타임로드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">사진갤러리</a></li>
+                <li><a href="#">영상갤러리</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="menu-bg"></div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <div id="main">
+        <div id="slide">
+          <ul id="slide-wrap">
+            <li class="slide">
+              <img
+                src="images/slide1.jpg"
+                alt="Vallery Festival의 매력: 자연과 예술의 만남"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="images/slide2.jpg"
+                alt="주요 프로그램 안내: 문화 체험과 공연"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="images/slide3.jpg"
+                alt="참여 아티스트 소개: 창의력의 향연"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- slide end -->
+
+        <article id="contents">
+          <section id="notice">
+            <div class="c-title">
+              <a href="#">공지사항</a>
+            </div>
+            <ul class="c-body">
+              <li><a href="#">2024 Vallery Festival 일정 안내</a></li>
+              <li><a href="#">참여 아티스트 및 프로그램 공개</a></li>
+              <li><a href="#">사전 등록 및 티켓 판매 안내</a></li>
+              <li><a href="#">축제 관련 교통 및 주차 안내</a></li>
+            </ul>
+          </section>
+          <section id="gallery">
+            <div class="c-title">
+              <a href="#">갤러리</a>
+            </div>
+            <ul class="c-body">
+              <li>
+                <a href="#">
+                  <img src="images/gal1.jpg" alt="첫번째 갤러리 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/gal2.jpg" alt="두번째 갤러리 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/gal3.jpg" alt="세번째 갤러리 이미지" />
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="shortcut">
+            <img src="images/shortcut.jpg" alt="바로가기 이미지" />
+            <span><a href="#">바로가기</a></span>
+          </section>
+        </article>
+        <!-- contents end -->
+
+        <footer id="footer">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="images/bw-logo.jpg"
+                alt="Vallery Festival 흑백 로고 이미지"
+              />
+            </a>
+          </div>
+          <div id="copyright">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+          </div>
+          <div id="famsites">
+            <select name="sites" id="sites">
+              <option value="opt">지역 문화재단</option>
+              <option value="opt">관광청 공식 사이트</option>
+              <option value="opt">예술 및 문화 행사</option>
+            </select>
+          </div>
+        </footer>
+        <!-- footer end -->
+      </div>
+      <!-- main end -->
+
+      <div id="modal-bg"></div>
+      <div id="popup">
+        <div class="p-title">Vallery Festival에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요!<br />
+          Vallery Festival을 찾아주셔서 감사합니다.<br />
+          올해 축제에서는 예술과 자연이 조화를 이루는 특별한 경험을 선사할
+          예정입니다.<br />
+          축제의 일정과 프로그램에 대한 정보는 아래 링크에서 확인하실 수
+          있습니다.<br />
+          가족과 친구들과 함께 즐거운 시간을 보내고, 아름다운 추억을
+          만들어보세요!
+        </div>
+        <div id="close-btn"><a href="#">×닫기</a></div>
+      </div>
+      <!-- popup end -->
+    </div>
+    <!-- wrap end -->
+  </body>
+</html>
