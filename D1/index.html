@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조이컨트리클럽</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 하단개별메뉴, 상하슬라이드, 탭메뉴, 팝업(첫공지) -->
+  <!-- 스팟메뉴, 비율유지로고, 브라우저전체, 글자배너, 글자바로가기 -->
+  <body>
+    <div id="wrap">
+      <div>
+        <header id="header">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="조이컨트리클럽 로고 이미지" />
+            </a>
+          </div>
+          <div id="nav">
+            <ul id="menu">
+              <li>
+                <a href="#">CLUB</a>
+                <ul class="submenu">
+                  <li><a href="#">클럽소개</a></li>
+                  <li><a href="#">시설안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">BOOKING</a>
+                <ul class="submenu">
+                  <li><a href="#">요금안내</a></li>
+                  <li><a href="#">예약안내</a></li>
+                  <li><a href="#">위약안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">INFORMATION</a>
+                <ul class="submenu">
+                  <li><a href="#">명예의 전당</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">자료실</a></li>
+                  <li><a href="#">포토갤러리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">COMMUNITY</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">Q&A</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="spotmenu">
+              <li><a href="#">로그인</a></li>
+              <li>|</li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </header>
+        <div id="main">
+          <ul id="shortcut">
+            <li>
+              <a href="#">
+                <img src="images/icon1.png" alt="갤러리" />
+                <span>갤러리</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon2.png" alt="자료실" />
+                <span>자료실</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon3.png" alt="전화문의" />
+                <span>전화문의</span>
+              </a>
+            </li>
+          </ul>
+          <!-- shortcut end -->
+
+          <div id="slide">
+            <ul id="slide-wrap">
+              <li class="slide">
+                <img
+                  src="images/slide1.jpg"
+                  alt="조이컨트리클럽의 매력: 자연 속에서의 휴식"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="images/slide2.jpg"
+                  alt="주요 시설 안내: 골프, 레저 및 편의 시설"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="images/slide3.jpg"
+                  alt="이벤트 및 특별 프로그램: 가족과 함께하는 즐거운 시간"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- slide end -->
+
+          <div id="banner">
+            <div class="b-image">
+              <img src="images/banner.jpg" alt="배너 이미지" />
+            </div>
+            <div class="b-content">
+              <div class="b-title">조이컨트리클럽에서의 완벽한 휴식</div>
+              <div class="b-body">
+                자연이 어우러진 조이컨트리클럽에서 잊지 못할 순간을
+                경험하세요.<br />
+                프리미엄 골프 코스와 다양한 레저 시설, 그리고 가족과 함께 즐길
+                수 있는 이벤트가 준비되어 있습니다.
+              </div>
+            </div>
+            <div class="b-arrow">
+              <a href="#">＞</a>
+            </div>
+          </div>
+          <!-- banner end -->
+
+          <article id="contents">
+            <ul id="tab-title">
+              <li><a href="#">공지사항</a></li>
+              <li class="t-deactive"><a href="#">갤러리</a></li>
+            </ul>
+            <div id="tab-body">
+              <ul id="notice">
+                <li>
+                  <a href="#">
+                    <span>2024년 시즌 오프닝 안내</span>
+                    <span>2024년 3월 1일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>회원가입 및 혜택 안내</span>
+                    <span>2024년 3월 5일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>주말 이벤트 일정 공개</span>
+                    <span>2024년 3월 10일</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>골프 레슨 프로그램 개설 소식</span>
+                    <span>2024년 3월 15일</span>
+                  </a>
+                </li>
+              </ul>
+              <ul id="gallery">
+                <li>
+                  <a href="#">
+                    <img src="images/gal1.jpg" alt="갤러리 첫번째 이미지" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/gal2.jpg" alt="갤러리 두번째 이미지" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/gal3.jpg" alt="갤러리 세번째 이미지" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <!-- contents end -->
+        </div>
+        <!-- main end -->
+      </div>
+      <!-- upper end -->
+
+      <footer id="footer">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="images/bw-logo.jpg"
+              alt="조이컨트리클럽 흑백 로고 이미지"
+            />
+          </a>
+        </div>
+        <div id="copyright">
+          COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+        </div>
+        <ul id="sns">
+          <li>
+            <a href="#"><img src="images/sns1.jpg" alt="페이스북" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sns2.jpg" alt="트위터" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sns3.jpg" alt="인스타그램" /></a>
+          </li>
+        </ul>
+      </footer>
+      <!-- footer end -->
+
+      <div id="popup">
+        <div class="p-title">조이컨트리클럽에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요!<br />
+          조이컨트리클럽을 찾아주셔서 감사합니다.<br />
+          저희 클럽은 자연과 함께하는 다양한 레저 활동을 통해 여러분에게 특별한
+          경험을 제공하고자 합니다.<br />
+          시설 안내와 최신 이벤트 정보는 아래 링크를 통해 확인해 주세요.<br />
+          가족 및 친구와 함께 잊지 못할 추억을 만들어보세요!
+        </div>
+        <div id="close-btn">
+          <a href="#">×닫기</a>
+        </div>
+      </div>
+      <!-- popup end -->
+    </div>
+  </body>
+</html>
