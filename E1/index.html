@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김치이야기</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 하단개별메뉴, 좌우슬라이드, 모달팝업(첫공지) -->
+  <!-- AD브라우저전체, 글자배너, 글자바로가기 -->
+  <!-- 비율유지로고, 흑백로고, 로그인/회원가입 -->
+  <body>
+    <div id="wrap">
+      <div id="main">
+        <header id="header">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="김치이야기 로고" />
+            </a>
+          </div>
+          <div id="nav">
+            <ul id="menu">
+              <li>
+                <a href="#">김치 소개</a>
+                <ul class="submenu">
+                  <li><a href="#">초대의 글</a></li>
+                  <li><a href="#">김치의 유래</a></li>
+                  <li><a href="#">김치 재료</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">김치퓨전</a>
+                <ul class="submenu">
+                  <li><a href="#">지역별 김치</a></li>
+                  <li><a href="#">김치 스파게티</a></li>
+                  <li><a href="#">김치 볶음밥</a></li>
+                  <li><a href="#">김치와 고기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">체험프로그램</a>
+                <ul class="submenu">
+                  <li><a href="#">김치 담그기</a></li>
+                  <li><a href="#">명사와 함께</a></li>
+                  <li><a href="#">관람하기</a></li>
+                  <li><a href="#">예약하기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <ul class="submenu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">참여게시판</a></li>
+                  <li><a href="#">자료실</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="spotmenu">
+              <li><a href="#">로그인</a></li>
+              <li>|</li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </header>
+        <!-- header end -->
+
+        <article id="contents">
+          <section id="banner">
+            <div class="b-image">
+              <img src="images/banner.jpg" alt="배너 이미지" />
+            </div>
+            <div class="b-content">
+              <div class="b-title">
+                김치의 모든 것, 김치이야기와 함께하세요!
+              </div>
+              <div class="b-body">
+                전통의 맛을 현대의 레시피로 재해석한 김치이야기!<br />
+                다양한 김치 레시피와 건강한 발효식품에 대한 정보를
+                확인하세요.<br />
+                신규 회원 가입 시 특별 할인 혜택도 제공하니 지금 바로 시작해
+                보세요!
+              </div>
+            </div>
+            <div class="b-arrow">
+              <a href="#">＞</a>
+            </div>
+          </section>
+          <section id="notice">
+            <div class="t-title">
+              <a href="#">공지사항</a>
+            </div>
+            <ul class="t-body">
+              <li>
+                <a href="#">
+                  <span>김치 만들기 클래스 신청 안내</span>
+                  <span>2024년 5월 1일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>특별 할인 이벤트: 인기 김치 제품 20% 할인</span>
+                  <span>2024년 5월 5일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>김치 레시피 공모전 개최 안내</span>
+                  <span>2024년 5월 10일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>김치 보관 및 관리 팁 업데이트</span>
+                  <span>2024년 5월 15일</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="gallery">
+            <div class="t-title">
+              <a href="#">갤러리</a>
+            </div>
+            <ul class="t-body">
+              <li>
+                <a href="#">
+                  <img src="images/gal1.jpg" alt="갤러리 첫번째 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/gal2.jpg" alt="갤러리 두번째 이미지" />
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="shortcut">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="images/icon1.png" alt="회사소개" />
+                  <span>회사소개</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon2.png" alt="지도" />
+                  <span>지도</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon3.png" alt="공지사항" />
+                  <span>공지사항</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon4.png" alt="전화문의" />
+                  <span>전화문의</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- contents end -->
+
+        <div id="slide">
+          <ul id="slide-wrap">
+            <li class="slide">
+              <img
+                src="images/slide1.jpg"
+                alt="김치의 역사: 전통과 문화의 만남"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="images/slide2.jpg"
+                alt="다양한 김치 레시피: 집에서 쉽게 만들기"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="images/slide3.jpg"
+                alt="김치의 건강 효능: 몸에 좋은 발효식품"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- slide end -->
+      </div>
+      <!-- main end -->
+
+      <footer id="footer">
+        <div class="logo">
+          <a href="#">
+            <img src="images/bw-logo.jpg" alt="김치이야기 흑백 로고" />
+          </a>
+        </div>
+        <div id="menu-copy">
+          <ul id="btm-menu">
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">제품 소개</a></li>
+            <li><a href="#">레시피 모음</a></li>
+            <li><a href="#">고객 지원</a></li>
+            <li><a href="#">배송 및 반품 안내</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+          <p id="copyright">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="modal-bg"></div>
+      <div id="popup">
+        <div class="p-title">김치이야기에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요! <br />김치이야기를 방문해 주셔서 감사합니다.<br />
+          우리의 특별한 김치 레시피와 다양한 정보를 통해 김치의 매력을 함께
+          느껴보세요!<br />
+          신규 회원 가입 시 첫 구매에 대한 할인 혜택도 있으니 놓치지 마세요!
+        </div>
+        <div id="close-btn">
+          <a href="#">×닫기</a>
+        </div>
+      </div>
+      <!-- popup end -->
+    </div>
+  </body>
+</html>
