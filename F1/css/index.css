@@ -1,0 +1,319 @@
+@charset "UTF-8";
+:root {
+  --main-color: #233189;
+  --sub-color: #deb63c;
+  --bg-color: #fff;
+  --text-color: #666666;
+  --hover-text-color: #333;
+  --body-width: 1340px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+li,
+ul {
+  list-style: none;
+}
+
+/* ----- wrap ----- */
+#wrap {
+  width: 100%;
+}
+
+/* ----- header ----- */
+#header {
+  width: var(--body-width);
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--main-color);
+}
+.logo {
+  width: 200px;
+  height: 100%;
+}
+.logo > a {
+  width: 100%;
+  height: 100%;
+}
+.logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0 7px;
+}
+
+/* ----- menu ----- */
+#nav {
+  width: calc(100% - 200px);
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: right;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+#menu {
+  display: flex;
+}
+#menu a {
+  width: 170px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#menu > li > a {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#menu > li > a:hover,
+.submenu > li > a:hover,
+.m-hover {
+  background-color: var(--sub-color);
+  color: var(--hover-text-color);
+}
+.submenu {
+  height: 200px;
+  background-color: var(--main-color);
+  display: none;
+}
+
+/* ----- slide ----- */
+#slide {
+  width: 100%;
+  height: 350px;
+  min-width: var(--body-width);
+  background-color: #e1e1e1;
+}
+#slide-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----- contents ----- */
+#contents {
+  width: var(--body-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ----- shortcut ----- */
+#shortcut {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(255, 255, 255, 0.8);
+  position: absolute;
+  top: -90px;
+}
+#shortcut > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shortcut a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+#shortcut a:hover {
+  text-decoration: underline;
+  color: var(--hover-text-color);
+}
+#shortcut img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ----- banner ----- */
+#banner {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.b-image {
+  width: 30%;
+  height: 100%;
+}
+.b-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.b-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.b-title {
+  font-weight: bold;
+}
+.b-body {
+  padding-top: 7px;
+}
+.b-arrow {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+.b-arrow a:hover {
+  color: var(--hover-text-color);
+}
+
+/* ----- tabs ----- */
+#tabs {
+  width: 60%;
+  height: 250px;
+  padding: 10px 20px;
+}
+.t-title {
+  display: flex;
+}
+.t-title a {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.deactive {
+  background-color: var(--hover-text-color);
+}
+.t-body {
+  border-top: thin solid var(--hover-text-color);
+  width: 100%;
+  height: 180px;
+}
+#notice a {
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+#notice a:hover {
+  text-decoration: underline;
+}
+#gallery {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#gallery li {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+#gallery a,
+#gallery img {
+  width: 100%;
+  height: 100%;
+}
+#gallery img {
+  object-fit: cover;
+}
+#gallery a:hover img {
+  transform: scale(1.2);
+}
+
+/* ----- footer ----- */
+#footer {
+  width: var(--body-width);
+  height: 120px;
+  margin: 0 auto;
+  background-color: var(--text-color);
+  color: var(--hover-text-color);
+  display: flex;
+}
+#menu-copy {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+#btm-menu {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btm-menu a {
+  padding: 0 10px;
+}
+#btm-menu a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#copyright {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- popup ----- */
+#popup {
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  display: none;
+  z-index: 300;
+}
+.p-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.p-body {
+  padding-top: 10px;
+}
+#close-btn {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#close-btn > a {
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  padding: 5px;
+}

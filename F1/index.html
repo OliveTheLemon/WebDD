@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주식회사 기능건설</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 하단개별메뉴, FIFO슬라이드, 팝업(첫공지), 탭메뉴 -->
+  <!-- 슬라이드브라우저전체, 비율유지로고, 무채색로고 -->
+  <!-- *바로가기 위치설정 position, 배경색만 투명도는 rgb로 4번째 인수 설정, 
+   menu z-index는 nav에 설정, menu a태그 높이만 지정하고, 좌우 padding, 
+   탭 body 따로 두고 그 아래 ul * -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.jpg" alt="기능건설 로고 이미지" />
+          </a>
+        </div>
+        <div id="nav">
+          <ul id="menu">
+            <li>
+              <a href="#">회사소개</a>
+              <ul class="submenu">
+                <li><a href="#">기업정보</a></li>
+                <li><a href="#">CEO인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">조직도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">지속가능경영</a>
+              <ul class="submenu">
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">품질경영</a></li>
+                <li><a href="#">안전경영</a></li>
+                <li><a href="#">환경경영</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업분야</a>
+              <ul class="submenu">
+                <li><a href="#">건축사업</a></li>
+                <li><a href="#">토목사업</a></li>
+                <li><a href="#">주택사업</a></li>
+                <li><a href="#">환경/플랜트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">홍보센터</a>
+              <ul class="submenu">
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">분양뉴스</a></li>
+                <li><a href="#">CI/BI</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <div id="slide">
+        <ul id="slide-wrap">
+          <li class="slide">
+            <img
+              src="images/slide1.jpg"
+              alt="기능건설의 비전: 지속 가능한 건설 솔루션 제공"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide2.jpg"
+              alt="완공 프로젝트 소개: 우리의 성과와 경험"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="images/slide3.jpg"
+              alt="고객 맞춤형 서비스: 고객과 함께하는 건설 과정"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- slide end -->
+
+      <article id="contents">
+        <section id="shortcut">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/icon1.png" alt="안전안내" />
+                <span>안전안내</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon2.png" alt="위치안내" />
+                <span>위치안내</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon3.png" alt="공지사항" />
+                <span>공지사항</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon4.png" alt="전화안내" />
+                <span>전화안내</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon5.png" alt="부서안내" />
+                <span>부서안내</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="banner">
+          <div class="b-image">
+            <img src="images/banner.jpg" alt="배너 이미지" />
+          </div>
+          <div class="b-content">
+            <div class="b-title">
+              기능건설과 함께하는 안전하고 혁신적인 건설!
+            </div>
+            <div class="b-body">
+              주식회사 기능건설은 최신 기술과 전문 인력을 바탕으로 지속 가능한
+              건설 솔루션을 제공합니다.<br />
+              고객의 요구를 최우선으로 생각하며, 완벽한 프로젝트 수행을 위해
+              최선을 다합니다.<br />
+              우리와 함께 안전하고 효율적인 건설을 경험해 보세요!
+            </div>
+          </div>
+          <div class="b-arrow">
+            <a href="#">＞</a>
+          </div>
+        </section>
+        <section id="tabs">
+          <ul class="t-title">
+            <li><a href="#">공지사항</a></li>
+            <li class="deactive"><a href="#">갤러리</a></li>
+          </ul>
+          <div class="t-body">
+            <ul id="notice">
+              <li>
+                <a href="#">
+                  <span>2024년 상반기 건설 프로젝트 개시 안내</span>
+                  <span>2024년 6월 1일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>기능건설 신규 사무소 개소 소식</span>
+                  <span>2024년 6월 5일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>안전 교육 프로그램 일정 공지</span>
+                  <span>2024년 6월 10일</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>고객 맞춤형 서비스 확대 안내</span>
+                  <span>2024년 6월 15일</span>
+                </a>
+              </li>
+            </ul>
+            <ul id="gallery">
+              <li>
+                <a href="#">
+                  <img src="images/gal1.jpg" alt="갤러리 첫번째 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/gal2.jpg" alt="갤러리 두번째 이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/gal3.jpg" alt="갤러리 세번째 이미지" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <!-- contents end -->
+
+      <footer id="footer">
+        <div class="logo">
+          <a href="#">
+            <img src="images/bw-logo.jpg" alt="기능건설 흑백 로고 이미지" />
+          </a>
+        </div>
+        <div id="menu-copy">
+          <ul id="btm-menu">
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">서비스 안내</a></li>
+            <li><a href="#">프로젝트 사례</a></li>
+            <li><a href="#">고객 지원</a></li>
+            <li><a href="#">뉴스 및 공지사항</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+          <p id="copyright">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="popup">
+        <div class="p-title">주식회사 기능건설에 오신 것을 환영합니다!</div>
+        <div class="p-body">
+          안녕하세요! <br />기능건설을 방문해 주셔서 감사합니다.<br />
+          우리 회사는 혁신적이고 안전한 건설 솔루션을 제공하여 고객의 기대를
+          뛰어넘는 결과를 만들어가고 있습니다.<br />
+          새로운 소식과 프로젝트 정보를 확인하고, 고객 맞춤형 서비스를 경험해
+          보세요!
+        </div>
+        <div id="close-btn"><a href="#">×닫기</a></div>
+      </div>
+      <!-- popup end -->
+    </div>
+  </body>
+</html>
