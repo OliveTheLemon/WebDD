@@ -1,0 +1,262 @@
+@charset "UTF-8";
+:root {
+  --main-color: #ef653a;
+  --sub-color: #59be00;
+  --bg-color: #fff;
+  --text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+}
+/* ----- wrap ----- */
+#wrap {
+  width: 1000px;
+  height: calc(350px + 200px + 100px);
+  display: flex;
+  position: relative;
+}
+
+/* ----- header ----- */
+#header {
+  width: 190px;
+  height: 100%;
+  background-color: var(--main-color);
+}
+#nav {
+  width: 100%;
+  height: calc(100% - 100px);
+  position: relative;
+}
+#menu {
+  width: 150px;
+  margin: 0 auto;
+}
+#menu a {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu > li {
+  position: relative;
+}
+#menu > li > a {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.submenu {
+  position: absolute;
+  top: -50px;
+  left: 150px;
+  z-index: 100;
+  display: none;
+}
+.submenu > li > a {
+  background-color: var(--sub-color);
+}
+#menu > li > a:hover,
+.m-hover {
+  background-color: var(--sub-color);
+}
+.submenu > li > a:hover {
+  background-color: var(--main-color);
+}
+.menu-bg {
+  width: 150px;
+  height: 300px;
+  background-color: var(--sub-color);
+  position: absolute;
+  top: -50px;
+  left: calc(150px + 20px);
+  z-index: 10;
+  opacity: 0.9;
+  display: none;
+}
+
+#main {
+  width: calc(100% - 190px);
+  height: 100%;
+}
+/* ----- slide ----- */
+#slide {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+#slide-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----- contents ----- */
+#contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+#contents > section {
+  width: 270px;
+  height: 100%;
+}
+
+.c-title a {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.c-body {
+  width: 100%;
+  height: 150px;
+  padding: 0 10px;
+  border-top: thin solid var(--text-color);
+}
+#notice > .c-body > li {
+  padding-top: 10px;
+}
+#gallery > .c-body {
+  display: flex;
+  justify-content: space-around;
+}
+#gallery > .c-body li {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+#gallery > .c-body a {
+  width: 100%;
+  height: 100%;
+}
+#gallery > .c-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all linear 0.3s;
+}
+#gallery > .c-body a:hover img {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+#banner {
+  position: relative;
+}
+#banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#banner > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#banner a {
+  background-color: var(--sub-color);
+  color: #fff;
+  padding: 10px 20px;
+}
+#banner a:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+/* ----- footer ----- */
+#footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: var(--text-color);
+  color: #000;
+}
+.logo {
+  width: 190px;
+  height: 100px;
+}
+.logo > a {
+  width: 100%;
+  height: 100%;
+}
+.logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0 10px;
+}
+#menu-copy {
+  width: calc(100% - 190px);
+  height: 100%;
+}
+.btm-menu {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btm-menu a {
+  padding: 0 10px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- popup ----- */
+#popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  padding: 20px;
+  display: none;
+  z-index: 300;
+}
+.p-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.p-body {
+  padding-top: 10px;
+}
+#close-btn {
+  display: flex;
+  justify-content: right;
+}
+#close-btn > a {
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  padding: 5px;
+}
