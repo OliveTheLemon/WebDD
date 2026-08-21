@@ -25,6 +25,35 @@ $(function () {
 
     currentIdx = nextIdx;
   }, 3000);
+
   // ----- 탭 메뉴
+  $(".t-body > ul").first().siblings().hide();
+
+  $(".t-title > li").click(function (e) {
+    e.preventDefault();
+
+    let idx = $(this).index();
+
+    $(".t-title > li")
+      .eq(idx)
+      .removeClass("deactive")
+      .siblings()
+      .addClass("deactive");
+
+    $(".t-body > ul").eq(idx).show().siblings().hide();
+  });
+
   // ----- 팝업
+  $("#notice >li")
+    .first()
+    .click(function (e) {
+      e.preventDefault();
+
+      $("#popup").show();
+    });
+  $("#close-btn > a").click(function (e) {
+    e.preventDefault();
+
+    $("#popup").hide();
+  });
 });
