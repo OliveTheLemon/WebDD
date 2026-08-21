@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>푸른마을</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <!-- 우측전체메뉴, FIFO슬라이드, 탭메뉴, 팝업(첫공지) -->
+  <!-- 200*40로고, 흑백로고, float바로가기, 글자배너, 스팟메뉴(로그인|회원가입) -->
+  <body>
+    <div id="wrap">
+      <div id="upper">
+        <header id="header">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="푸른마을 로고 이미지" />
+            </a>
+          </div>
+          <div id="nav">
+            <ul id="menu">
+              <li>
+                <a href="#">OnSale</a>
+                <ul class="submenu">
+                  <li><a href="#">할인행사</a></li>
+                  <li><a href="#">덤증정</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">기획전</a>
+                <ul class="submenu">
+                  <li><a href="#">봄 먹거리</a></li>
+                  <li><a href="#">여름 먹거리</a></li>
+                  <li><a href="#">가을 먹거리</a></li>
+                  <li><a href="#">겨울 먹거리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">푸른마을 레시피</a>
+                <ul class="submenu">
+                  <li><a href="#">메인요리</a></li>
+                  <li><a href="#">밑반찬</a></li>
+                  <li><a href="#">간식</a></li>
+                  <li><a href="#">브런치</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">매장안내</a>
+                <ul class="submenu">
+                  <li><a href="#">신규매장</a></li>
+                  <li><a href="#">추천매장</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="spotmenu">
+              <li><a href="#">로그인</a></li>
+              <li>|</li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </header>
+        <!-- header end -->
+
+        <div id="main">
+          <div id="menu-bg"></div>
+          <div id="slide">
+            <ul id="slide-wrap">
+              <li class="slide">
+                <img
+                  src="images/slide1.jpg"
+                  alt="자연 그대로의 신선함, 푸른마을 유기농 식재료"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="images/slide2.jpg"
+                  alt="친환경 농장에서 바로, 빠르고 신선한 배송"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="images/slide3.jpg"
+                  alt="건강과 지구를 위한 선택, 유기농 먹거리"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- slide end -->
+
+          <article id="contents">
+            <section id="shortcut"></section>
+            <!-- shortcut end -->
+
+            <section id="banner">＞</section>
+            <!-- banner end -->
+
+            <section id="tabs"></section>
+            <!-- tabs end -->
+          </article>
+          <!-- contents end -->
+        </div>
+        <!-- main end -->
+      </div>
+      <!-- upper end -->
+
+      <footer id="footer">
+        <div class="logo">
+          <a href="#">
+            <img src="images/bw-logo.jpg" alt="푸른마을 흑백로고 이미지" />
+          </a>
+        </div>
+        <div id="menu-copy">
+          <ul id="btm-menu">
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">상품 안내</a></li>
+            <li><a href="#">상품 안내</a></li>
+            <li><a href="#">고객 지원</a></li>
+            <li><a href="#">배송 및 반품 안내</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+          <p id="copyright">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <div id="popup">
+        <div class="p-title">푸른마을에서 유기농 신선식품을 만나보세요!</div>
+        <div class="p-body">
+          안녕하세요!<br />
+          푸른마을을 방문해 주셔서 감사합니다.<br />
+          저희는 자연 그대로의 신선한 유기농 식재료를 여러분께 빠르고 안전하게
+          전달해 드립니다.<br />
+          신규 회원을 위한 첫 구매 할인 이벤트도 진행 중이니, 지금 시작해
+          보세요!
+        </div>
+        <div id="close-btn"><a href="#">×닫기</a></div>
+      </div>
+      <!-- popup end -->
+    </div>
+  </body>
+</html>
