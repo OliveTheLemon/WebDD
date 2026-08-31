@@ -1,0 +1,259 @@
+@charset "UTF-8";
+:root {
+  --main-color: #f852c1;
+  --sub-color: #fdaf41;
+  --bg-color: #fff;
+  --text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+li,
+ul {
+  list-style: none;
+}
+
+/* ----- wrap ----- */
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----- header ----- */
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--main-color);
+  display: flex;
+}
+#nav {
+  width: calc(100% - 200px);
+  height: 100%;
+  z-index: 300;
+  position: relative;
+}
+#menu {
+  display: flex;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+#menu a {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu > li > a {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.submenu {
+  background-color: var(--bg-color);
+  display: none;
+}
+#menu > li > a:hover,
+.submenu > li > a:hover,
+.m-hover {
+  background-color: var(--sub-color);
+  color: #fff;
+}
+
+/* ----- slide ----- */
+#slide {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#slide-wrap {
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----- contents ----- */
+#contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+#contents > section {
+  width: 400px;
+  height: 100%;
+}
+
+/* ----- tabs ----- */
+#tabs {
+  padding-right: 5px;
+}
+.t-title {
+  display: flex;
+}
+.t-title > li > a {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 10px 20px;
+}
+.t-body {
+  width: 100%;
+  height: 150px;
+  border-top: thin solid var(--text-color);
+}
+.deactive {
+  background-color: var(--text-color);
+  color: #6a6969;
+}
+/* #notice {
+  display: none;
+} */
+#notice > li > a {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#gallery {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#gallery > li {
+  width: 30%;
+  height: 100%;
+}
+#gallery a {
+  width: 100%;
+  height: 100%;
+}
+#gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 5px;
+}
+
+/* ----- banner, shortcut ----- */
+#banner,
+#shortcut {
+  position: relative;
+}
+#banner > img,
+#shortcut > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#banner > span,
+#shortcut > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#banner > span > a,
+#shortcut > span > a {
+  background-color: var(--sub-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+}
+#banner > span > a:hover,
+#shortcut > span > a:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+/* ----- footer ----- */
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--text-color);
+  color: #000;
+  display: flex;
+}
+.logo {
+  width: 200px;
+  height: 100%;
+}
+.logo > a {
+  width: 100%;
+  height: 100%;
+}
+.logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0 10px;
+}
+.copyright {
+  width: calc(100% - 200px - 200px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns > li {
+  padding: 0 10px;
+}
+.sns img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ----- popup ----- */
+#popup {
+  width: 400px;
+  height: 290px;
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  display: none;
+}
+.p-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.p-body {
+  padding-top: 15px;
+}
+#close-btn {
+  display: flex;
+  justify-content: right;
+  padding-top: 5px;
+}
+#close-btn > a {
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  padding: 5px;
+}
