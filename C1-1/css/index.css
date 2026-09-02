@@ -1,0 +1,262 @@
+@charset "UTF-8";
+:root {
+  --main-color: #ffcc00;
+  --sub-color: #0091ff;
+  --bg-color: #fff;
+  --text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* ----- wrap ----- */
+#wrap {
+  width: 1000px;
+  height: calc(350px + 200px + 100px);
+  display: flex;
+  position: relative;
+}
+
+/* ----- header ----- */
+#header {
+  width: 170px;
+  height: 100%;
+  background-color: var(--main-color);
+}
+#nav {
+  width: 100%;
+  height: calc(100% - 100px);
+}
+#menu {
+  width: 150px;
+  margin: 0 auto;
+}
+#menu a {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu > li > a {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.submenu > li > a {
+  background-color: var(--bg-color);
+}
+#menu > li > a:hover,
+.submenu > li > a:hover,
+.m-hover {
+  background-color: var(--sub-color);
+  color: var(--bg-color);
+}
+.submenu {
+  display: none;
+}
+
+/* ----- main ----- */
+#main {
+  width: calc(100% - 170px);
+  height: 100%;
+}
+
+/* ----- slide ----- */
+#slide {
+  width: 100%;
+  height: 350px;
+}
+#slide-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----- contents ----- */
+#contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+#contents > section {
+  height: 100%;
+}
+#banner,
+#shortcut {
+  width: 25%;
+  position: relative;
+}
+#banner > img,
+#shortcut > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#banner > span,
+#shortcut > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#banner a,
+#shortcut a {
+  padding: 10px 20px;
+  background-color: var(--sub-color);
+  color: var(--bg-color);
+}
+#banner a:hover,
+#shortcut a:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+/* ----- tabs ----- */
+#tabs {
+  width: 50%;
+  padding: 0 6px;
+}
+.t-title {
+  display: flex;
+}
+.t-title > li > a {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.deactive {
+  background-color: var(--text-color);
+  color: #545454;
+}
+.t-body {
+  border-top: thin solid var(--text-color);
+  width: 100%;
+  height: 150px;
+}
+#notice > li > a {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+#notice > li > a:hover {
+  text-decoration: underline;
+}
+#gallery {
+  display: flex;
+  justify-content: space-around;
+}
+#gallery,
+#gallery a,
+#gallery img {
+  width: 100%;
+  height: 100%;
+}
+#gallery > li {
+  width: 30%;
+  height: 100%;
+}
+#gallery img {
+  object-fit: cover;
+  padding-top: 5px;
+}
+#gallery a:hover img {
+  opacity: 0.8;
+}
+
+/* ----- footer ----- */
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--text-color);
+  color: #000;
+  display: flex;
+}
+.logo {
+  width: 170px;
+  height: 100px;
+}
+.logo > a {
+  width: 100%;
+  height: 100%;
+}
+.logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0 10px;
+}
+#menu-copy {
+  width: calc(100% - 170px);
+  height: 100%;
+}
+#btm-menu,
+#copyright {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btm-menu > li {
+  padding: 0 10px;
+}
+#btm-menu > li:hover {
+  color: var(--sub-color);
+}
+
+/* ----- popup ----- */
+#popup {
+  width: 400px;
+  height: 310px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+  padding: 20px;
+  display: none;
+}
+.p-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.p-body {
+  padding-top: 15px;
+}
+#close-btn {
+  display: flex;
+  justify-content: right;
+}
+#close-btn > a {
+  padding: 5px;
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+}
