@@ -1,0 +1,286 @@
+@charset "UTF-8";
+:root {
+  --main-color: #ff82c9;
+  --sub-color: #82cdff;
+  --bg-color: #fff;
+  --text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* ------ wrap ------ */
+#wrap {
+  width: 100%;
+  /* min-width: 1200px; */
+  height: calc(400px + 250px + 100px);
+  position: relative;
+}
+
+/* ------ main ------ */
+#main {
+  width: 100%;
+  height: calc(400px + 250px);
+  display: flex;
+}
+
+/* ------ header ------ */
+#header {
+  width: 200px;
+  height: 100%;
+  background-color: var(--main-color);
+}
+#nav {
+  width: 100%;
+  height: calc(100% - 100px);
+}
+#menu {
+  width: 150px;
+  margin: 0 auto;
+}
+#menu a {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+#menu > li > a {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-left: 10px;
+}
+.submenu {
+  background-color: var(--bg-color);
+  display: none;
+}
+.submenu > li > a {
+  padding-left: 20px;
+}
+#menu > li > a:hover,
+.submenu > li > a:hover,
+.m-hover {
+  background-color: var(--sub-color);
+}
+
+/* ------ slide + contents ------ */
+#slide-contents {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+
+/* ------ slide + banner ------ */
+#slide-banner {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+/* ------ slide ------ */
+#slide {
+  width: calc(100% - 230px);
+  height: 100%;
+  overflow: hidden;
+}
+#slide-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------ banner ------ */
+#banner {
+  width: 230px;
+  height: 100%;
+  padding: 7px;
+}
+.b-image {
+  width: 100%;
+  height: 30%;
+}
+.b-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.b-content {
+  width: 100%;
+  height: 40%;
+  padding-top: 7px;
+}
+.b-title {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.b-body {
+  font-size: 0.8em;
+  padding-top: 7px;
+}
+.b-arrow {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* ------ contents ------ */
+#contents {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#contents > div {
+  width: 48%;
+  height: 100%;
+}
+.c-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 15px 25px;
+}
+.c-body {
+  width: 100%;
+  height: 200px;
+  border-top: thin solid var(--text-color);
+}
+#notice > .c-body a {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#notice > .c-body a:hover {
+  text-decoration: underline;
+}
+#gallery > .c-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+#gallery > .c-body > li {
+  width: 30%;
+  height: 100%;
+}
+#gallery > .c-body a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+#gallery > .c-body img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+#gallery > .c-body span {
+  font-size: 0.9em;
+}
+#gallery > .c-body a:hover {
+  text-decoration: underline;
+}
+
+/* ------ footer ------ */
+#footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: var(--text-color);
+  color: #000;
+}
+.logo {
+  width: 200px;
+  height: 100px;
+}
+.logo > a {
+  width: 100%;
+  height: 100%;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0 10px;
+}
+#fam-site {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#copyright {
+  width: calc(100% - 200px - 200px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ------ popup ------ */
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#popup {
+  width: 400px;
+  height: 310px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  display: none;
+  padding: 20px;
+}
+.p-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.p-body {
+  padding-top: 15px;
+}
+#close-btn {
+  display: flex;
+  justify-content: right;
+}
+#close-btn > a {
+  padding: 5px;
+  border: thin solid var(--text-color);
+  border-radius: 5px;
+}
